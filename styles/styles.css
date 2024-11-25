@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Gilroy ;
+    font-style: normal;
+    font-style: normal;
+    src:local('Gilroy'), url('/fonts/Gilroy-Black.woff2') format(.woff2)
+}
+.header{
+    padding: 30px;
+}
+.scool{
+    padding: 30px; 
+}
+.button {
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 16px;
+}
+.menu__list {
+    list-style-type: none;
+    size: 16px;
+
+}
+.course__button--disable{
+    border-color: purple;
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 16px;
+    
+}
+.scool__title span{
+    color: blue;
+}
+.scool__title h1{
+    font-family: "Gilroy", ;
+    size: 60px;
+    line-height: 117%;
+    letter-spacing: #232323;
+}
+.scool__button{
+
+}
