@@ -1,49 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-@font-face{
-    font-family: Gilroy ;
-    font-style: normal;
-    font-style: normal;
-    src:local('Gilroy'), url('/fonts/Gilroy-Black.woff2') format(.woff2)
-}
+/* Подключение шрифтов */
+@import "fonts.css";
+/* Подключение основных стилей */
+@import "base.css";
+/* Подключение универсальных стилей */
+@import "typography.css";
+/* Подключение стилей относящихся к header */
+@import "header.css";
+/* Подключение стилей относящихся к footer */
+@import "footer.css";
+/* Подключение стилей относящихся к main */
+@import "main.css";
+
 .header{
     padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .scool{
     padding: 30px; 
 }
-.button {
-    background-color: purple;
-    color: white;
-    border: 0;
-    border-radius: 15px;
-    padding: 12px;
-    font-size: 16px;
-}
 .menu__list {
-    list-style-type: none;
-    size: 16px;
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
 
 }
-.course__button--disable{
-    border-color: purple;
-    border-radius: 15px;
-    padding: 12px;
-    font-size: 16px;
+.menu__link{
+    padding: 10px;
+    background-color: antiquewhite;
+    white-space: nowrap;
+}
+.submenu__list{
+    display: none;
+    /* position: absolute; */
+    /* list-style: none; */
+}
+.submenu__link{
+    background-color:aquamarine;
+    /* display: flex;
+    flex-direction: column; */
     
 }
-.scool__title span{
-    color: blue;
+.menu__item--active{
+    position: relative;
 }
-.scool__title h1{
-    font-family: "Gilroy", ;
-    size: 60px;
-    line-height: 117%;
-    letter-spacing: #232323;
+.menu__item--active:hover .submenu__list{
+    display: flex;
 }
-.scool__button{
 
+.scool__title1 {
+    color: blue;
+    font-family: 'Gilroy', sans-serif ;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.47px;
+}
+.scool__title{
+    font-family: 'Gilroy', sans-serif ;
+    size: 60px;
+    letter-spacing: #232323;
+    margin-top: 15px;
+  
+    
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Онлайн-школа</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -14,28 +15,31 @@
                 <li class="menu__item"><a class="menu__link" href="#">Курсы</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
-                <li>
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">Еще</a></li>
-                        <img src="images/Vector (6).png" alt="Вниз">
-                        <li></li>
+                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Еще</a></li>
+                <li class="submenu">
+                    <ul class="submenu__list">
+                        <li class="submenu__item"><a class="submenu__link" href="#">Еще</a></li>
+                        <li class="submenu__item"><a class="submenu__link" href="#">Еще1</a></li>
+                        <li class="submenu__item"><a class="submenu__link" href="#">Еще2</a></li>
+                        <!-- <img src="images/Vector (6).png" alt="Вниз"> -->
                     </ul>
                 </li>
             </ul>
         </nav>
+        
         <button class="header__button button" type="button">Войти</button>
     </header>
     <main class="main">
         <section class="scool">
             <div class="scool__left-block">
-                <div class="scool__title">
-                    <span>Language to go</span>
-                    <h1>Онлайн-школа иностранных языков</h1>
+                <div>
+                    <span class="scool__title1" >Language to go</span>
+                    <h1 class="scool__title">Онлайн-школа иностранных языков</h1>
                 </div>
                 <span>Достигайте своих целей с помощью авторских игровых методик от носителей языка</span>
             </div> 
             <div class="scool__button">
-                <button class="header__button button"><a class="header__button button" href="login.html">Попробовать бесплатно</a></button>
+                <button class="scool__button button">Попробовать бесплатно</button>
                 <img src="images/play-icon.png" alt="play-icon" width="60" height="60">
                 <span>Посмотреть промо-ролик</span>
             </div>
@@ -44,10 +48,10 @@
         <section class="courses">
             <div class="courses__top">
                 <h2 class="courses__title title">Курсы иностранных языков для любого уровня</h2>
-                <button class="course__button--disable" type="button"><a href="#">Все курсы</a></button>
+                <button class="course__button button button--accent" type="button">Все курсы</button>
             </div>
             <ul class="courses__list">
-                <li class="courses_card">
+                <li class="courses__card">
                     <img src="images/german.png" alt="Флаг Германии" width="50" height="50">
                     <h3 class="courses__title">Немецкий для начального уровня</h3>
                     <div>
@@ -57,7 +61,7 @@
                         <span>От 6 520 P</span>
                     </div>
                 </li>
-                <li class="courses_card">
+                <li class="courses__card">
                     <img src="images/china.png" alt="Флаг Китая" width="50" height="50">
                     <h3 class="courses__title">Китайский для среднего уровня</h3>
                     <div>
@@ -67,7 +71,7 @@
                         <span>От 6 520 P</span>
                     </div>
                 </li>
-                <li class="courses_card">
+                <li class="courses__card">
                     <img src="images/spain.png" alt="Флаг Испании" width="50" height="50">
                     <h3 class="courses__title">Испанский для среднего уровня</h3>
                     <div>
